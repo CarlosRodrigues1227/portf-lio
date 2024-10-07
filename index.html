@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Carlos Eduardo Fagundes Rodrigues</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #222;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #ff4757;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+        }
+
+        /* Navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff4757;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ff4757;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Seção Sobre Mim */
+        .about {
+            background-color: #1e90ff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: auto;
+            color: #fff;
+        }
+
+        /* Seção Habilidades */
+        .skills {
+            background-color: #ff6b81;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            font-size: 1.5rem;
+            color: white;
+            margin: 10px 0;
+        }
+
+        /* Seção Projetos */
+        .projects {
+            background-color: #3742fa;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            display: inline-block;
+            width: 30%;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-card h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+        }
+
+        .project-card p {
+            font-size: 1.1rem;
+        }
+
+        /* Seção Contato */
+        .contact {
+            background-color: #2ed573;
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-info div {
+            margin: 0 20px;
+        }
+
+        .contact-info i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #ff4757;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeIn 1s ease;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .project-card {
+                width: 80%;
+            }
+
+            .contact-info {
+                flex-direction: column;
+            }
+
+            .contact-info div {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Carlos Eduardo Fagundes Rodrigues</h1>
+        <p>Desenvolvedor de Software | 21 Anos</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#about">Sobre Mim</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <!-- Seção Sobre Mim -->
+    <section class="about" id="about">
+        <h2>Sobre Mim</h2>
+        <p>Olá, sou Carlos Eduardo, tenho 21 anos e sou estudante de Análise e Desenvolvimento de Software. Sou apaixonado por tecnologia e pela criação de soluções eficientes, com foco em impactar o mundo digital de forma positiva.</p>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section class="skills" id="skills">
+        <h2>Minhas Habilidades</h2>
+        <ul>
+            <li>HTML - Avançado</li>
+            <li>CSS - Avançado</li>
+            <li>Java - Intermediário</li>
+        </ul>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section class="projects" id="projects">
+        <h2>Projetos</h2>
+        <div class="project-card">
+            <h3>Projeto 1 - Sistema de Cadastro</h3>
+            <p>Um sistema completo de cadastro de usuários utilizando HTML, CSS e JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Projeto 2 - Landing Page Responsiva</h3>
+            <p>Página inicial responsiva criada para promover um serviço digital.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Projeto 3 - Aplicativo de Lista de Tarefas</h3>
+            <p>Aplicativo web para gerenciar tarefas diárias utilizando JavaScript.</p>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section class="contact" id="contact">
+        <h2>Contato</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:carloseduardo12354@gmail.com">carloseduardo12354@gmail.com</a></p>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <p><a href="https://wa.me/5567999308645" target="_blank">WhatsApp: (67) 99930-8645</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Carlos Eduardo Fagundes Rodrigues - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
