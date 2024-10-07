@@ -10,14 +10,13 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #222;
-            color: #fff;
-            overflow-x: hidden;
+            background-color: #f0f0f0;
+            color: #333;
         }
 
         /* Estilos do cabeçalho */
         header {
-            background-color: #ff4757;
+            background-color: #2c3e50;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -29,55 +28,39 @@
         }
 
         header p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         /* Navegação */
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #34495e;
             padding: 10px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 15px;
             font-size: 1.2rem;
             position: relative;
-            transition: color 0.3s ease;
         }
 
         nav a:hover {
-            color: #ff4757;
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: -5px;
-            width: 0;
-            height: 2px;
-            background-color: #ff4757;
-            transition: width 0.3s ease, left 0.3s ease;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-            left: 0;
+            color: #1abc9c;
         }
 
         /* Seção Sobre Mim */
         .about {
-            background-color: #1e90ff;
             padding: 50px 20px;
             text-align: center;
+            background-color: #ecf0f1;
         }
 
         .about h2 {
             font-size: 2.5rem;
+            color: #2c3e50;
             margin-bottom: 20px;
         }
 
@@ -85,20 +68,20 @@
             font-size: 1.2rem;
             max-width: 800px;
             margin: auto;
-            color: #fff;
+            color: #34495e;
         }
 
         /* Seção Habilidades */
         .skills {
-            background-color: #ff6b81;
             padding: 50px 20px;
+            background-color: #bdc3c7;
             text-align: center;
         }
 
         .skills h2 {
             font-size: 2.5rem;
             margin-bottom: 30px;
-            color: white;
+            color: #2c3e50;
         }
 
         .skills ul {
@@ -108,21 +91,21 @@
 
         .skills ul li {
             font-size: 1.5rem;
-            color: white;
             margin: 10px 0;
+            color: #34495e;
         }
 
         /* Seção Projetos */
         .projects {
-            background-color: #3742fa;
             padding: 50px 20px;
+            background-color: #ecf0f1;
             text-align: center;
         }
 
         .projects h2 {
             font-size: 2.5rem;
             margin-bottom: 30px;
-            color: white;
+            color: #2c3e50;
         }
 
         .project-card {
@@ -133,29 +116,29 @@
             text-align: center;
             display: inline-block;
             width: 30%;
-            color: #333;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         }
 
         .project-card h3 {
             margin: 15px 0;
             font-size: 1.5rem;
+            color: #2c3e50;
         }
 
         .project-card p {
             font-size: 1.1rem;
+            color: #34495e;
         }
 
         /* Seção Contato */
         .contact {
-            background-color: #2ed573;
             padding: 50px 20px;
+            background-color: #34495e;
             text-align: center;
             color: white;
         }
@@ -178,7 +161,6 @@
         .contact-info i {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            color: white;
         }
 
         .contact-info p {
@@ -191,12 +173,12 @@
         }
 
         .contact-info a:hover {
-            color: #ff4757;
+            color: #1abc9c;
         }
 
         /* Rodapé */
         footer {
-            background-color: #333;
+            background-color: #2c3e50;
             padding: 20px;
             text-align: center;
             color: white;
@@ -257,7 +239,7 @@
     <!-- Seção Sobre Mim -->
     <section class="about" id="about">
         <h2>Sobre Mim</h2>
-        <p>Olá, sou Carlos Eduardo, tenho 21 anos e sou estudante de Análise e Desenvolvimento de Software. Sou apaixonado por tecnologia e pela criação de soluções eficientes, com foco em impactar o mundo digital de forma positiva.</p>
+        <p>Olá, sou Carlos Eduardo, tenho 21 anos e sou estudante de Análise e Desenvolvimento de Software. Sou apaixonado por tecnologia e pela criação de soluções eficientes que impactam o mundo digital de forma positiva.</p>
     </section>
 
     <!-- Seção Habilidades -->
